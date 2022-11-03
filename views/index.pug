@@ -5,14 +5,14 @@ block content
   p Welcome to Vasavi Devineni's #{title}
 
   button(type="button", class="btn btn-primary", onclick="doBump()") Press  me
-  div(id = "bump") Bump the count
+  div(id = "bump") <br>Bump the count
   script.
     let count = 0
     let bump = 1
     function doBump(){
       count += bump;
       bump += 1;
-      document.getElementById("bump").innerHTML=`Count ${count} with bump ${bump}`;
+      document.getElementById("bump").innerHTML=`<br>Count ${count} with bump ${bump}`;
     }
   <br>
   a(href='http://localhost:3000/trees') TreesPage

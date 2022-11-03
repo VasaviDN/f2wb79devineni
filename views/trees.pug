@@ -7,3 +7,14 @@ block content
     div(class="row")
       each tree in results
         div(class="col-sm-2") #{tree.tree_name} size:#{tree.size} age:#{tree.age}
+  <br>
+  h5= 'Click on below items to get the price of purchase'
+  div(class="container-fluid")
+    each tree,index in results
+      div(class="row", onclick=`buy(${index})`)
+        div(class="col-sm-2") <br>Tree #{index}: #{tree.tree_name} size:#{tree.size} age:#{tree.age}
+
+  script. 
+        function buy(price){
+          alert('You purchased item ' + price)
+        }

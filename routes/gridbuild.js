@@ -8,7 +8,7 @@ router.get('/', function(req, res, next) {
   console.log(`cols ${query.cols}`)
   rows=query.rows;
   cols=query.cols;
-  res.render('gridBuild', { title: 'Grid Build' , query: query});
+  res.render('gridbuild', { title: 'Grid Build' , query: query});
 });
 
 module.exports = router;
